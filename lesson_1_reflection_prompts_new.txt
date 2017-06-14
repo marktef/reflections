@@ -1,0 +1,65 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    Fill in your answer here
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Fill in your answer here
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    test, easy, clear
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Fill in your answer here
+
+How can you use the commands git log and git diff to view the history of files?
+
+    git log 显示repository的修改日志
+    git diff 显示两次commit id间的不同
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    git checkout <commit id> 检出任意commit id的代码版本
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    利用Git管理代码的不同版本
+
+Compare two commits, printing each line that is present in one commit but not the other.
+
+git diff will do this. It takes two arguments - the two commit ids to compare. 
+
+
+Make a copy of an entire Git repository, including the history, onto your own computer.
+
+git clone will do this. It takes one argument - the url of the repository to copy. 
+
+
+Temporarily reset all files in a directory to their state at the time of a specific commit.
+
+git checkout will do this. It takes one argument - the commit ID to restore. 
+
+
+Show the commits made in this repository, starting with the most recent.
+
+git log will do this. It doesn't take any arguments.
+
+
+
+初始化版本库时会发生什么情况？为什么你需要这样做？
+
+git init create a new repository
+git status display the status of a repository
+git add <file> add a file into the staging area(暂存区)
+git rm --cached <file> remove a file from the staging area, but it is still in the working directory.
+git reset remove all files from the staging area
+
+git commit -m "Commit message" commit all changes to the repostiory
